@@ -20,11 +20,11 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
-        <h1 className="text-3xl font-bold text-center text-indigo-700 mb-6">Ethara</h1>
-        <h2 className="text-xl font-semibold mb-4 text-center">Sign In</h2>
-        {error && <div className="bg-red-100 text-red-700 p-3 rounded mb-4">{error}</div>}
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#1e1b4b] to-[#4338ca]">
+      <div className="bg-white p-8 rounded-xl shadow-lg w-full max-w-md">
+        <h1 className="text-3xl font-bold text-center text-[#1e1b4b] mb-6">Acme Corp</h1>
+        <h2 className="text-lg font-semibold mb-4 text-center text-gray-600">Sign In</h2>
+        {error && <div className="bg-red-100 text-red-700 p-3 rounded-lg mb-4 text-sm">{error}</div>}
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
@@ -32,7 +32,7 @@ const Login = () => {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#4338ca]"
               required
             />
           </div>
@@ -42,19 +42,19 @@ const Login = () => {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#4338ca]"
               required
             />
           </div>
           <button
             type="submit"
-            className="w-full bg-indigo-700 text-white py-2 rounded-lg hover:bg-indigo-800 transition"
+            className="w-full bg-gradient-to-r from-[#1e1b4b] to-[#4338ca] text-white py-2.5 rounded-lg text-sm font-medium hover:opacity-90 transition"
           >
             Sign In
           </button>
         </form>
-        <p className="text-center mt-4 text-sm text-gray-600">
-          Don't have an account? <Link to="/signup" className="text-indigo-700 hover:underline">Sign Up</Link>
+        <p className="text-center mt-4 text-sm text-gray-500">
+          Don't have an account? <Link to="/signup" className="text-[#4338ca] font-medium hover:underline">Sign Up</Link>
         </p>
       </div>
     </div>
