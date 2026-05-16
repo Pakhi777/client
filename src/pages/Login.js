@@ -45,7 +45,7 @@ const Login = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#1e1b4b] to-[#4338ca]">
       <div className="bg-white p-8 rounded-xl shadow-lg w-full max-w-md">
-        <h1 className="text-3xl font-bold text-center text-[#1e1b4b] mb-6">Acme Corp</h1>
+        <h1 className="text-3xl font-bold text-center text-[#1e1b4b] mb-6">Taskflow</h1>
         <h2 className="text-lg font-semibold mb-4 text-center text-gray-600">Sign In</h2>
         {error && <div className="bg-red-100 text-red-700 p-3 rounded-lg mb-4 text-sm">{error}</div>}
         <form onSubmit={handleSubmit}>

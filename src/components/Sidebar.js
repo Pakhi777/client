@@ -24,7 +24,7 @@ const Sidebar = () => {
 
   return (
     <div className="w-60 min-h-screen bg-gradient-to-b from-[#1e1b4b] to-[#4338ca] text-white p-5 flex flex-col shrink-0">
-      <h2 className="text-xl font-bold mb-8">Acme Corp</h2>
+      <h2 className="text-xl font-bold mb-8">Taskflow</h2>
       <nav className="flex flex-col gap-1 flex-1">
         {links.map((link) => (
           <NavLink
